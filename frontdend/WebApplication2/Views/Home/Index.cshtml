@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<html> 
+<head>
+    
+    <script src="~/Scripts/jquery-3.3.1.js"></script>    
+    <script>
+        $(document).ready(function () {
+            ClickAlert()
+        })
+        function ClickAlert() { 
+            alert($('title').text());
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1" onclick="ClickAlert()">
+            <div class="divHeader">
+                Header
+            </div>
+        </div>
+        <div class="div2" onclick="ClickAlert()">
+        </div>
+    </div>
+</body>
+</html>
